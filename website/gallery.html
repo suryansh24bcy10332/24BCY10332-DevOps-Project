@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ABC Technologies Gallery — office spaces, team events, awarded projects, and company milestones." />
+  <title>Gallery | ABC Technologies</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Gallery heights for visual variety */
+    .gh-tall   { height: 340px; }
+    .gh-medium { height: 240px; }
+    .gh-short  { height: 200px; }
+    .gh-wide   { height: 280px; }
+    /* Category color themes */
+    .cat-office  { background: linear-gradient(135deg, #1E3A8A, #2563EB); }
+    .cat-events  { background: linear-gradient(135deg, #059669, #0d9488); }
+    .cat-projects{ background: linear-gradient(135deg, #7c3aed, #5b21b6); }
+    .cat-awards  { background: linear-gradient(135deg, #d97706, #dc2626); }
+  </style>
+</head>
+<body>
+
+<div id="preloader"><div class="loader-ring"></div></div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-custom scrolled">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">ABC<span>Tech</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn-primary-custom" href="contact.html">Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container position-relative" style="z-index:1;">
+    <div class="section-subtitle" style="color:#06B6D4;">Visual Stories</div>
+    <h1>Our Gallery</h1>
+    <div class="mt-3 breadcrumb-custom">
+      <a href="index.html">Home</a><span> &nbsp;/&nbsp; Gallery</span>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section-padding" style="background:var(--bg);">
+  <div class="container">
+    <div class="text-center mb-4 reveal">
+      <div class="section-subtitle">Explore Our World</div>
+      <h2 class="section-title">Life at ABC Technologies</h2>
+      <div class="divider divider-center"></div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="gallery-filter reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="office">Office</button>
+      <button class="filter-btn" data-filter="events">Events</button>
+      <button class="filter-btn" data-filter="projects">Projects</button>
+      <button class="filter-btn" data-filter="awards">Awards</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid reveal">
+
+      <!-- OFFICE -->
+      <div class="gallery-item" data-category="office">
+        <div class="gallery-placeholder cat-office gh-tall" data-label="San Francisco HQ — Main Workspace">
+          <i class="fas fa-building"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-placeholder cat-events gh-medium" data-label="TechSummit 2024 — Annual Conference">
+          <i class="fas fa-microphone-lines"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="projects">
+        <div class="gallery-placeholder cat-projects gh-tall" data-label="FinEdge Cloud Migration — 3M Transactions/day">
+          <i class="fas fa-server"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="awards">
+        <div class="gallery-placeholder cat-awards gh-medium" data-label="AWS Partner of the Year 2024">
+          <i class="fas fa-trophy"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="office">
+        <div class="gallery-placeholder cat-office gh-medium" data-label="London Office — Collaboration Zone">
+          <i class="fas fa-city"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-placeholder cat-events gh-tall" data-label="Global Team Retreat 2024 — Lisbon">
+          <i class="fas fa-users"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="projects">
+        <div class="gallery-placeholder cat-projects gh-short" data-label="HealthLink AI Platform Launch">
+          <i class="fas fa-robot"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="awards">
+        <div class="gallery-placeholder cat-awards gh-tall" data-label="Gartner Cool Vendor 2024">
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="office">
+        <div class="gallery-placeholder cat-office gh-medium" data-label="Singapore Office — Security Operations Center">
+          <i class="fas fa-shield-halved"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-placeholder cat-events gh-short" data-label="DevOps Community Meetup — Q2 2024">
+          <i class="fas fa-code-branch"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="projects">
+        <div class="gallery-placeholder cat-projects gh-wide" data-label="RetailMax — Real-Time Analytics Dashboard">
+          <i class="fas fa-chart-line"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="awards">
+        <div class="gallery-placeholder cat-awards gh-medium" data-label="ISO 27001 Certification Ceremony 2023">
+          <i class="fas fa-certificate"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="office">
+        <div class="gallery-placeholder cat-office gh-tall" data-label="Toronto Office — Innovation Lab">
+          <i class="fas fa-flask"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-placeholder cat-events gh-medium" data-label="AI Hackathon 2024 — 48 Hours of Innovation">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="projects">
+        <div class="gallery-placeholder cat-projects gh-medium" data-label="Government Smart City — IoT Platform">
+          <i class="fas fa-network-wired"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="awards">
+        <div class="gallery-placeholder cat-awards gh-short" data-label="Best DevOps Practice — TechExcellence 2023">
+          <i class="fas fa-medal"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="office">
+        <div class="gallery-placeholder cat-office gh-short" data-label="SF HQ — Rooftop Lounge">
+          <i class="fas fa-umbrella"></i>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-placeholder cat-events gh-wide" data-label="10th Anniversary Celebration — Global Team">
+          <i class="fas fa-champagne-glasses"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<section style="background:linear-gradient(135deg,var(--primary),var(--secondary));padding:50px 0;">
+  <div class="container">
+    <div class="row g-4 text-center text-white">
+      <div class="col-6 col-md-3 reveal">
+        <div style="font-size:2rem;font-weight:800;color:#06B6D4;">4</div>
+        <div style="font-size:.85rem;opacity:.8;">Global Offices</div>
+      </div>
+      <div class="col-6 col-md-3 reveal delay-1">
+        <div style="font-size:2rem;font-weight:800;color:#06B6D4;">300+</div>
+        <div style="font-size:.85rem;opacity:.8;">Team Members</div>
+      </div>
+      <div class="col-6 col-md-3 reveal delay-2">
+        <div style="font-size:2rem;font-weight:800;color:#06B6D4;">20+</div>
+        <div style="font-size:.85rem;opacity:.8;">Industry Awards</div>
+      </div>
+      <div class="col-6 col-md-3 reveal delay-3">
+        <div style="font-size:2rem;font-weight:800;color:#06B6D4;">15+</div>
+        <div style="font-size:.85rem;opacity:.8;">Years of Excellence</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4 col-md-6">
+        <a class="footer-brand" href="index.html">ABC<span>Tech</span></a>
+        <p class="mt-3">Leading the digital transformation journey for enterprises worldwide.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Company</h6>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Services</h6>
+        <ul class="footer-links">
+          <li><a href="services.html">Cloud Computing</a></li>
+          <li><a href="services.html">AI Solutions</a></li>
+          <li><a href="services.html">Cybersecurity</a></li>
+          <li><a href="services.html">DevOps</a></li>
+          <li><a href="services.html">IT Support</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6>Contact Us</h6>
+        <ul class="footer-contact">
+          <li><span class="icon"><i class="fas fa-location-dot"></i></span><span>ABC Tower, 42 Innovation Drive, San Francisco, CA 94105</span></li>
+          <li><span class="icon"><i class="fas fa-phone"></i></span><span>+1 (800) 222-4567</span></li>
+          <li><span class="icon"><i class="fas fa-envelope"></i></span><span>hello@abctechnologies.com</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span>&copy; 2025 ABC Technologies. All rights reserved.</span>
+      <span><a href="#" style="color:inherit;margin-right:16px;">Privacy Policy</a><a href="#" style="color:inherit;">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
